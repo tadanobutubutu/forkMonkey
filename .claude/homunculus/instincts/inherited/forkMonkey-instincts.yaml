@@ -1,0 +1,352 @@
+# Instincts generated from https://github.com/tadanobutubutu/forkMonkey
+# Generated: 2026-05-30T00:41:11.964Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: forkMonkey-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/forkMonkey
+---
+
+# ForkMonkey Commit Length
+
+## Action
+
+Keep commit messages concise (~29 characters)
+
+## Evidence
+
+- Average commit message length: 29 chars
+- Based on 28 commits
+
+---
+id: forkMonkey-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/forkMonkey
+---
+
+# ForkMonkey Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: forkMonkey-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/forkMonkey
+---
+
+# ForkMonkey Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: forkMonkey-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/forkMonkey
+---
+
+# ForkMonkey Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: forkMonkey-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/forkMonkey
+---
+
+# ForkMonkey Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: forkMonkey-workflow-daily-monkey-evolution-update
+trigger: "when doing daily monkey evolution update"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/forkMonkey
+---
+
+# ForkMonkey Workflow Daily Monkey Evolution Update
+
+## Action
+
+Follow the daily-monkey-evolution-update workflow:
+1. Update README.md with the latest evolution info or stats.
+2. Update monkey_data/history.json with new historical data.
+3. Update monkey_data/stats.json with new statistics.
+4. Optionally update monkey_data/dna.json and monkey_data/monkey.svg if there are genetic or visual changes.
+5. Generate a new SVG in monkey_evolution/ with the current date and time.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~25x per month
+- Files: README.md, monkey_data/history.json, monkey_data/stats.json
+
+---
+id: forkMonkey-workflow-monkey-initialization
+trigger: "when doing monkey initialization"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/forkMonkey
+---
+
+# ForkMonkey Workflow Monkey Initialization
+
+## Action
+
+Follow the monkey-initialization workflow:
+1. Create or reset README.md with initial information.
+2. Create monkey_data/dna.json with starting DNA.
+3. Create monkey_data/history.json with initial history.
+4. Create monkey_data/monkey.svg with the initial monkey image.
+5. Create monkey_data/stats.json with initial stats.
+6. Generate an initial SVG in monkey_evolution/ with the current date and time.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: README.md, monkey_data/dna.json, monkey_data/history.json
+
+---
+id: forkmonkey-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct File Naming
+
+## Action
+
+Name the file using kebab-case (e.g., monkey-evolution.ts)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: forkmonkey-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: forkmonkey-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: forkmonkey-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: forkmonkey-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: forkmonkey-instinct-export-style
+trigger: "When exporting functions or classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: forkmonkey-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: forkmonkey-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Commit Format
+
+## Action
+
+Use a freeform commit message, optionally with a 🐵 emoji prefix for evolution-related commits
+
+## Evidence
+
+- Seen in commit examples: '🐵 Daily evolution: 2026-05-06'
+- Pattern in commits.examples
+
+---
+id: forkmonkey-instinct-daily-evolution-workflow
+trigger: "When recording the monkey's daily evolution"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Daily Evolution Workflow
+
+## Action
+
+Update README.md, monkey_data/history.json, monkey_data/stats.json, optionally monkey_data/dna.json and monkey_data/monkey.svg, and generate a new SVG in monkey_evolution/ with the current date and time
+
+## Evidence
+
+- Workflow: daily-monkey-evolution-update
+- Commit sequence in workflow example
+
+---
+id: forkmonkey-instinct-monkey-initialization-workflow
+trigger: "When creating or resetting the monkey's state"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/forkMonkey
+---
+
+# Forkmonkey Instinct Monkey Initialization Workflow
+
+## Action
+
+Create or reset README.md, monkey_data/dna.json, monkey_data/history.json, monkey_data/monkey.svg, monkey_data/stats.json, and generate an initial SVG in monkey_evolution/ with the current date and time
+
+## Evidence
+
+- Workflow: monkey-initialization
+- Commit sequence in workflow example
+
